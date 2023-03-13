@@ -11,4 +11,4 @@
 
 2. ```"outDir": "./bundle", "``` 
 
-3. ```"rootDir": "./src",```.d
+3. ```"rootDir": "./src",```.So we can run it.
