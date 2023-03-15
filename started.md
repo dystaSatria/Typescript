@@ -12,3 +12,12 @@
 2. ```"outDir": "./bundle", "``` 
 
 3. ```"rootDir": "./src",```.So we can run it.
+
+
+After this example we make some test code like
+
+```javascript
+let myName = "Reza";
+console.log(myName);
+
+```
