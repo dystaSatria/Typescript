@@ -8,4 +8,7 @@ console.log({userNumber}); //this is will be declare an object
 //any type data example
 
 let myPet;
+myPet = "cat";
+myPet = 1234;
 
+//we use "typescript" so we better avoid the "any" type data
