@@ -23,3 +23,12 @@ let myName = "Reza";
 console.log(myName);
 
 ```
+
+* Input ```tsc``` in terminal and otomatically we will make ```bundle``` folder with index.js :
+   ```javascript
+"use strict";
+
+let myName = "Reza";
+console.log(myName);
+
+```
