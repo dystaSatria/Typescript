@@ -33,7 +33,21 @@ console.log(myName);
 ```
 
 * To compile typescript we should use 
-```text
+```powershell
 tsc && node bundle/index.js 
-Get-Command -Name Clear-Host
 ```
+ If you get an error below :
+ ```powershell
+ + tsc && node bundle/index.js
++     ~~
+The token '&&' is not a valid statement separator in this version.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine
+ ```
+ 
+ We can trick it with :
+ ```powershell
+ tsc ; node bundle/index.js 
+ ```
+
+  
