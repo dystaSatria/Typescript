@@ -33,7 +33,7 @@ console.log(myName);
 ```
 
 * To compile typescript we should use 
-```powershell
+```text
 tsc && node bundle/index.js 
 Get-Command -Name Clear-Host
 ```
