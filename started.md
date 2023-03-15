@@ -14,9 +14,9 @@
 3. ```"rootDir": "./src",```.So we can run it.
 
 
-After this example we make ```src folder``` and ```src/index.ts```.
+* After this example we make ```src```folder and ```src/index.ts```.
 
-Make some test code :
+   Make some test code :
 
 ```javascript
 let myName = "Reza";
