@@ -31,3 +31,8 @@ console.log(myName);
 let myName = "Reza";
 console.log(myName);
 ```
+
+* To compile typescript we should use 
+```terminal
+tsc && node bundle/index.js 
+```
