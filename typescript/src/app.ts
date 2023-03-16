@@ -30,3 +30,16 @@ myGirl = ["Sandy Cheeks","Mikasa Ackerman","Shizuka"];
 //tuple array
 let myEx : [string,number,boolean];
 myEx = ["gabaghta",22,true];
+
+
+/*
+----------------- Custom Type Data Chapter -------------------------
+*/
+
+type FriendType = {
+    name: string;
+    alive : boolean;
+    doubt :number;
+}
+
+let ourFriend : FriendType;
