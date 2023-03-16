@@ -43,3 +43,18 @@ type FriendType = {
 }
 
 let ourFriend : FriendType;
+
+//if u want to optional some varieable , example we should not to input the "doubt" we can code below:
+type GirlType = {
+    name: string;
+    alive : boolean;
+    doubt?:number;
+}
+
+let myGf : GirlType;
+
+myGf = {
+    name  :"vonzy",
+    alive : true,
+};
+
