@@ -106,3 +106,12 @@ const addNumber = (x,y): void => {
 
 addNumber(12 + 22); // this is will error;
 //you can fix this error with ("noImplicitAny": false,)  in tsconfig.json file
+
+
+// function sumNumber2(x,y) example
+const sumNumber2 = (x:number,y:number): void => {
+    const z:number = x+y;
+    console.log("the result is :" + z);
+  };
+
+sumNumber2(12,22);
