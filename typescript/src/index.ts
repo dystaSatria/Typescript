@@ -88,3 +88,12 @@ console.log(create3());
 //function : void
 const create4 = ():void => console.log("Hiiii World");
 create4();
+
+const sumNumber = (): void => {
+    let aa = 1;
+    let b = 2;
+    let z = aa + b;
+    console.log("ahahaha " + z); //output ahahaha 3
+  };
+
+  sumNumber();
