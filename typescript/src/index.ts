@@ -69,3 +69,13 @@ function create(): string {
 
 console.log(create())
 
+
+function createNumber() : number {
+    return 23;
+}
+console.log(createNumber())
+
+
+//Arrow Function 
+const create2 = () : string => "hello world";
+console.log(create2())
