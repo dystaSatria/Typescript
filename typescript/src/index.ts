@@ -133,3 +133,14 @@ const add2 = (x: number, y: number): string => {
   };
 
 console.log(add2(12,30));
+
+/*
+----------------- Type  Chapter -------------------------
+*/
+
+type anime = string;
+let Aot : anime;
+
+Aot = "Freedom";
+
+console.log(Aot); //output : Freedom
