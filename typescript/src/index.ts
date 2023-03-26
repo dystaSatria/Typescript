@@ -115,3 +115,21 @@ const sumNumber2 = (x:number,y:number): void => {
   };
 
 sumNumber2(12,22);
+
+/*
+----------------- Add Function Chapter -------------------------
+*/
+
+function add(x:number,y:number):string {
+    return `${x} + ${y} = ${x+y} `;
+}
+
+console.log(add(20,30));
+
+//in Arraw Fucntion
+
+const add2 = (x: number, y: number): string => {
+    return `${x} + ${y} = ${x + y}`;
+  };
+
+console.log(add2(12,30));
