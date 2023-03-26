@@ -63,7 +63,7 @@ console.log(myGf);
 
 // Function 
 
-function create(){
+function create(): string {
     return "Hello world";
 }
 
