@@ -84,3 +84,7 @@ console.log(create2())
 const create3 = () : string => "Hey World";
 const result = create3();
 console.log(create3());
+
+//function : void
+const create4 = ():void => console.log("Hiiii World");
+create4();
