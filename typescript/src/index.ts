@@ -144,3 +144,16 @@ let Aot : anime;
 Aot = "Freedom";
 
 console.log(Aot); //output : Freedom
+
+
+//Part 2
+type Woman = string;
+type Man = string;
+
+type Gender = Woman | Man;
+
+let human : Gender;
+
+human = "Levi Ackermann";
+console.log(human);
+
