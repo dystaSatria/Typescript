@@ -1,18 +1,11 @@
-let message :string ="hello world";
+// let message:string ="hello world";
+// let userNumber:number = 123;
+// console.log(message);
 
-console.log(message);
+// console.log({userNumber});//different : this is will be declare an object
 
-let userNumber : number = 123;//this section ":number" mean to avoid "any type data"
-console.log({userNumber}); //this is will be declare an object
-
-//any type data example
-
-let myPet;
-myPet = "cat";
-myPet = 1234;
-
-//we use "typescript" so we better avoid the "any" type data
-
+let namaSaya: string = "Reza";
+console.log(namaSaya);
 
 //if u want to make variable to multidata(string or number)
 
@@ -41,8 +34,15 @@ type FriendType = {
     alive : boolean;
     doubt :number;
 }
-
+// you must input the all element in the "FriendType" 
 let ourFriend : FriendType;
+
+ourFriend = {
+    name :'messi',
+    alive : true,
+    doubt : 238,
+};
+console.log(ourFriend);
 
 //if u want to optional some varieable , example we should not to input the "doubt" we can code below:
 type GirlType = {
@@ -57,4 +57,15 @@ myGf = {
     name  :"vonzy",
     alive : true,
 };
+
+console.log(myGf);
+
+
+// Function 
+
+function create(){
+    return "Hello world";
+}
+
+console.log(create())
 
