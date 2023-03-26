@@ -79,3 +79,8 @@ console.log(createNumber())
 //Arrow Function 
 const create2 = () : string => "hello world";
 console.log(create2())
+
+//for flexible console log
+const create3 = () : string => "Hey World";
+const result = create3();
+console.log(create3());
