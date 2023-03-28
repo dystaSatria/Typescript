@@ -1,4 +1,3 @@
 # Typescript
 
-Ddd
-I
+D
