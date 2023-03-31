@@ -168,9 +168,8 @@ interface IProsesor{
     clockSize : number;
 }
 
-function create(parameter : IProsesor): void{
+function createInterface(parameter : IProsesor): void{
     console.log("succces");
-
 }
 //We must make new variale(const)
 
