@@ -173,6 +173,7 @@ function createInterface(parameter : IProsesor): void{
     Prosesor Brand : ${parameter.brand}
     Base model : ${parameter.baseModel}
     MOdel name : ${parameter.modelName}
+    Clock size :
     
       
     `);
