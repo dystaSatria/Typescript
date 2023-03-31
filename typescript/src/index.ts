@@ -26,7 +26,7 @@ myEx = ["gabaghta",22,true];
 
 
 /*
------------------ Custom Type Data Chapter -------------------------
+----------------- Custom Type Data Chapter ------------------------
 */
 
 type FriendType = {
