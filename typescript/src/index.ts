@@ -169,7 +169,7 @@ interface IProsesor{
 }
 
 function createInterface(parameter : IProsesor): void{
-    console.log("succces" + );
+    console.log("succces" +parameter );
 }
 //We must make new variale(const)
 
