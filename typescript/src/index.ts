@@ -172,6 +172,7 @@ function createInterface(parameter : IProsesor): void{
     console.log(`Your Information 
     Prosesor Brand : ${parameter.brand}
     Base model : ${parameter.baseModel}
+    MOdel name :
     
       
     `);
