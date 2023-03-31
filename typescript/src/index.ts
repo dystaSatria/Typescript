@@ -187,4 +187,4 @@ const intelCore5{
     clockSize : 4,
 }
 //After made the variable we use this variable to the fucntion as parameter in function
-createInterface(in)
+createInterface(intelCore5)
