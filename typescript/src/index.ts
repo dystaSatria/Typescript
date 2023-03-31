@@ -157,3 +157,28 @@ let human : Gender;
 human = "Levi Ackermann";
 console.log(human);
 
+/*
+------------ Interface Chapter----------
+*/
+
+interface IProsesor{
+    brand : string;
+    baseModel : string;
+    modelName : string;
+    clockSize : number;
+}
+
+function create(parameter : IProsesor): void{
+    console.log("succces");
+
+}
+//We must make new variale(const)
+
+const intelCore5{
+    brand : "intel",
+    baseModel :"A",
+    modelName : "Ahashg",
+    clockSize : 4,
+}
+//After made the variable we use this variable to the fucntion as parameter in function
+create(in)
