@@ -50,6 +50,6 @@ The token '&&' is not a valid statement separator in this version.
  tsc ; node bundle/index.js 
  ```
 
-.
+
   
 
