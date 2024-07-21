@@ -3,41 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IOChatApp</title>
+    <title>Typescript Basic ChatWeb Simulation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-    <script src="/socket.io/socket.io.js" ></script>
+    <script src="/socket.io/socket.io.js"></script>
     <style>
         body {
-            margin-top: 30px;
+            margin-top: 50px;
+           
+            height: 100vh; 
+        }
+
+        .well {
+            margin-top: 20px; /* Mengurangi margin top agar tidak terlalu jauh dari form */
+            padding: 10px;
+            background-color: rgba(137, 225, 129, 0.555);
+        }
+
+        /* Stil tambahan jika diperlukan */
+        .jumbotron {
+            background-color: rgba(255, 255, 255, 0.5); /* Mengatur opacity background jumbotron */
         }
     </style>
 </head>
-<body>
+<body style="background: url('chatbg.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="well">
-                    <h3>Online Users</h3>
-                    <ul class="list-group" id="users"></ul>
-
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <div class="jumbotron">
+                    <h1 class="display-4">Typescript Basic ChatWeb Simulation </h1>
                 </div>
             </div>
-
             <div class="col-md-8">
-                <div class="chat id" id="chat">
-                    <form  id="messageform">
+                <div class="chat" id="chat">
+                    <form id="messageform">
                         <div class="form-group">
-                            <label>Enter Message</label>
-                            <textarea class="form-control" id="message"></textarea>
-                            </div> </br>
-                            <input type="submit" class="btn btn-primary" value="send message" />
-                            </div>
+                            <label for="message">Enter Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="py-3 my-5">
+        <div class="container">
+            <p class="text-center text-body-secondary">© 2024 dystaSatria</p>
+        </div>
+    </footer>
+
+    <script>
+        $(function(){
+            var socket = io.connect();
+            var $messageform = $('#messageform');
+            var $message = $('#message');
+            var $chat = $('#chat');
+
+            $messageform.submit(function(e){
+                e.preventDefault();
+                socket.emit('send message', $message.val());
+                $message.val('');
+                console.log('submitted');
+            });
+
+            socket.on('new message', function(data){
+                $chat.append('<div class="well">' + data.msg + '</div>');   
+            });
+        });
+    </script>
+
 </body>
 </html>
