@@ -16,8 +16,18 @@ This is a simple chat web application simulation built using HTML, Bootstrap, jQ
 
 ## Installation
 
-1. Clone the repository:
+1. Clone or Download the project:
+
+2. Install the Socket.io
+   
+   ```bash
+   npm install socket.io
+   ```
+   
+3. Run it 
 
    ```bash
-   git clone https://github.com/yourusername/IOChatApp.git
-   cd IOChatApp
+   node server
+   ```
+
+   
