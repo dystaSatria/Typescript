@@ -2,7 +2,7 @@
 
 Basic ChatWeb Simulation using Typescript, Socket.io and Bootstrap.
 
-[![Screenshot](screenshot.png)](https://github.com/dystaSatria/Typescript/blob/main/chatApp/ss.png)
+[![Screenshot](screenshot.png)](https://github.com/dystaSatria/Typescript/blob/main/chatApp/ss.png)]
 
 ## Description
 
