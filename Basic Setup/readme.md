@@ -32,4 +32,4 @@ This folder like basic explanation about the starter basic setup for Typescript
   ```
 
 Especially look at "script". This bunch code make the typescript source automate to javascript 
------------------------
+
