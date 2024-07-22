@@ -12,6 +12,7 @@ This folder like basic explanation about the starter basic setup for Typescript
 ## Notes
 
 - package.json
+  
   ```json
 
   {
@@ -33,3 +34,9 @@ This folder like basic explanation about the starter basic setup for Typescript
 
 Especially look at "script". This bunch code make the typescript source automate to javascript 
 
+- tsconfig.json
+
+```json
+ "module": "ES6",      // for import some stuff like example at src/script.ts
+  "outDir": "./dest",                                   /* Specify an output folder for all emitted files. */
+```
