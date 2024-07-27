@@ -20,7 +20,7 @@
    Make some test code :
 
 ```javascript
-let myName = "Reza";
+let myName = "World";
 console.log(myName);
 
 ```
