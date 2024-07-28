@@ -1,1 +1,1 @@
-# Mini Tasks Typescript
+# Mini Tasks of Typescript
